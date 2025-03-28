@@ -1,0 +1,608 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+}
+
+/* HEADER - FIXED WITH TITLE & NAVBAR */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #004085;
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between; /* Distributes items evenly */
+    align-items: center;
+    padding: 0 30px; /* Adds some padding on both sides */
+}
+
+nav a {
+    color: #004085;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap; 
+}
+
+nav a:last-child {
+    margin-right: 0; /* Removes any extra margin on the last item */
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+
+/* MEMBER SECTION */
+.members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 90px; /* Adjusted for header */
+}
+
+/* MEMBER BOX */
+.member {
+    position: relative;
+    width: 320px;
+    height: 380px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* MEMBER IMAGE */
+.member img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-bottom: 3px solid #004085;
+}
+
+/* DESIGNATION BOX */
+.designation {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 64, 133, 0.9);
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.member h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #004085;
+}
+.member {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+
+/* BUTTON STYLE */
+.btn {
+    display: inline-block;
+    margin: 12px;
+    padding: 10px 15px;
+    background: #004085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #007bff;
+}
+
+/* FOOTER - HIDDEN UNTIL SCROLL */
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    color: #004085;
+    padding: 0px;
+    font-size: 14px;
+    position: fixed;
+    bottom: -60px;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.3s;
+}
+/* ABOUT US SECTION */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.about-text h3 {
+    color: #0A2463;
+    font-size: 28px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-image img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* ASK A QUESTION PAGE */
+.ask-container {
+    max-width: 600px;
+    margin: 120px auto 50px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.ask-container h2 {
+    color: #004085;
+    margin-bottom: 10px;
+}
+
+.ask-container p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* FORM STYLING */
+.ask-form input, .ask-form select, .ask-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ask-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.ask-form button {
+    width: 100%;
+    padding: 12px;
+    background: #004085;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.ask-form button:hover {
+    background: #007bff;
+}
+/* --- Styling for the Contact Information Section --- */
+.contact-info-container {
+    background-color: #f7f7f7; /* Light background, adjust as needed */
+    padding: 30px; /* Increased padding for better spacing */
+    margin-top: 40px; /* More space between form and contact info */
+    border-radius: 12px; /* Consistent border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    display: grid;
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    gap: 30px; /* Increased gap between columns */
+    text-align: left; /* Align text to the left within the container */
+}
+
+@media (min-width: 768px) {
+    .contact-info-container {
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    }
+}
+
+.contact-info-column h3 {
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 15px;
+    font-size: 1.6em; /* Slightly larger heading */
+}
+
+.contact-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-services li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+.get-in-touch-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 1em;
+}
+
+.get-in-touch-details i { /* Style for Font Awesome icons (if you use them) */
+    margin-right: 10px;
+    color: #007bff; /* Example icon color */
+    font-size: 1.2em;
+}
+
+.location-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.location-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1em;
+}
+
+.location-list li::before {
+    content: "•"; /* Bullet point */
+    margin-right: 10px;
+    color: #3498db; /* Different bullet color */
+    font-size: 1.2em;
+}
+/* Styling for Bio Page */
+.bio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bio-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.bio-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.bio-text {
+    flex: 2;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: justify;
+}
+
+.bio-text h2 {
+    color: #002366;
+}
+
+.bio-text p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00308F;
+}
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.blog-card {
+    width: 90%; /* Make it slightly wider */
+    max-width: 800px; /* Set a max width to keep it balanced */
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px; /* Slightly rounder corners */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.blog-card:hover {
+    transform: scale(1.02);
+}
+
+.blog-card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.blog-card p {
+    color: #555;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.blog-post span {
+    font-size: 14px;
+    color: #555;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 10%;
+}
+
+.service {
+    width: 300px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004085;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: #007bff;
+    color: white;
+}
+
+/* Service Details Section */
+.service-details {
+    display: none;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Left Side - Image */
+.service-image {
+    flex: 1;
+    text-align: center;
+}
+
+.service-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side - Description */
+.service-description {
+    flex: 1;
+    text-align: left;
+}
+
+.service-description p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-details {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Chatbot Container */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+/* Chatbot Box (Initially Hidden) */
+.chatbot {
+    display: none;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Toggle Button */
+.chatbot-toggle {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+}
+
+.chatbot-toggle:hover {
+    background: #0056b3;
+}
+
+/* Chatbot Header */
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Chatbot Body */
+.chat-body {
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Chatbot Footer */
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.chat-footer button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Chat Messages */
+.user-message {
+    text-align: right;
+    background: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.bot-message {
+    background: #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+
+/* JAVASCRIPT FOR AUTO-HIDE HEADER & FOOTER */

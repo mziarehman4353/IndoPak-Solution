@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | IndoPak Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header id="navbar">
+        <h1>IndoPak Solution</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="ask.html">Ask a Question</a>
+            
+            
+        </nav>
+    </header>
+
+    <main>
+        <h2>About Us</h2>
+
+        <div class="about-container">
+            <div class="about-image">
+                <img src="group-photo.jpg" alt="IndoPak Legends Group Photo">
+            </div>
+            <div class="about-text">
+                <h3>Our Journey in Indonesia</h3>
+                <p>
+                    We first met here in Indonesia, brought together by different dreams but a shared goal—to support each other like a family. 
+                    <span class="highlight">Abuzar</span>, already a student here, became our mentor, teaching us essential survival tactics every night. 
+                    With his psychology background, he became our go-to person whenever we faced challenges.
+                </p>
+                <p>
+                    Our group consists of experts in various fields—<span class="highlight">Finance, IT, Design, Networking, and Mental Well-being.</span> 
+                    If anyone in our circle or beyond needs guidance in these areas, we're always ready to help. 
+                    Moreover, we provide <span class="highlight">free scholarship guidance</span> to those who aspire to study abroad.
+                </p>
+                <p><strong>We're more than just a group; we're a family.</strong></p>
+            </div>
+        </div>
+
+    </main>
+    <a href="https://wa.me/6282128519959" class="whatsapp-float" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+    </a>
+    
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+        <div class="chatbot-container">
+            <div class="chatbot-toggle" onclick="toggleChatbot()">Chat with Us</div>
+            <div class="chatbot" id="chatbot">
+                <div class="chat-header">Chat with Us</div>
+                <div class="chat-body" id="chat-body">
+                    <p class="bot-message">Hello! How can I help you?</p>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+
+
+    <footer>
+        <p>© 2025 IndoPak Solution. All rights reserved. Created by Zia Ul Rehman Zafar.</p>
+    </footer>
+
+</body>
+</html>

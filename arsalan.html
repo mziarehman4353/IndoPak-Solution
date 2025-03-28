@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Muhammad Arsalan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Meet the IndoPak Legends</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+
+            <a href="ask.html">Ask a Question</a>
+        </nav>
+    </header>
+
+    <main class="bio-container">
+        <div class="bio-image">
+            <img src="arsalan.jpg" alt="Muhammad Arsalan">
+        </div>
+        <div class="bio-text">
+            <h2>Muhammad Arsalan</h2>
+            <p><strong>Muhammad Arsalan</strong> is the <strong>Layout Designer</strong> and <strong>Senior Chef</strong> of IndoPak Legends, combining his expertise in <strong>Civil Engineering</strong> with his passion for exploration and food.</p>
+            <p>Whenever the group plans a trip, Arsalan is the <strong>mastermind behind the travel routes, destinations, and experiences</strong>. His deep sense of adventure ensures no outing is ever boring.</p>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </main>
+    <a href="https://wa.me/6282128519959" class="whatsapp-float" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+    </a>
+    
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+                <!-- Chatbot Container -->
+            </style>
+            <div class="chatbot-container">
+                <div class="chatbot-toggle" onclick="toggleChatbot()">Chat with Us</div>
+                <div class="chatbot" id="chatbot">
+                    <div class="chat-header">Chat with Us</div>
+                    <div class="chat-body" id="chat-body">
+                        <p class="bot-message">Hello! How can I help you?</p>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" id="chat-input" placeholder="Type your message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+
+    <footer>
+        <p>© 2025 IndoPak Solution. All rights reserved. Created by Zia Ul Rehman Zafar.</p>
+    </footer>
+</body>
+</html>

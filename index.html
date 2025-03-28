@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndoPak Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> 
+    <script src="https://kit.fontawesome.com/0a66df3915.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header id="navbar">
+        <h1>IndoPak Solution</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="ask.html">Ask a Question</a>
+            
+            
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="color: lightblue;">Meet the IndoPak Legends</h2>
+        <div class="members-container">
+
+            <div class="member" data-link="abuzar.html">
+                <div class="designation">Leader & Psychologist</div>
+                <img src="abuzar.png" alt="Abuzar Ghafari">
+                <h3>Abuzar Ghafari</h3>
+            </div>
+
+            <div class="member" data-link="saif.html">
+                <div class="designation">Finance Minister</div>
+                <img src="saif.jpg" alt="Muhammad Saif">
+                <h3>Muhammad Saif</h3>
+            </div>
+
+            <div class="member" data-link="arsalan.html">
+                <div class="designation">Layout Designer & Chef</div>
+                <img src="arsalan.jpg" alt="Muhammad Arsalan">
+                <h3>Muhammad Arsalan</h3>
+            </div>
+
+            <div class="member" data-link="marwan.html">
+                <div class="designation">Faithful & Networking Guy</div>
+                <img src="marwan.jpg" alt="Marwan Ahmad">
+                <h3>Marwan Ahmad</h3>
+            </div>
+
+            <div class="member" data-link="zia.html">
+                <div class="designation">IT Minister</div>
+                <img src="zia.jpg" alt="Zia Ul Rehman Zafar">
+                <h3>Zia Ul Rehman Zafar</h3>
+            </div>
+
+        </div>
+    </main>
+    <main>
+        <h2 style="color: lightblue;">About Us</h2>
+
+        <div class="about-container">
+            <div class="about-image">
+                <img src="group-photo.jpg" alt="IndoPak Legends Group Photo">
+            </div>
+            <div class="about-text">
+                <h3>Our Journey in Indonesia</h3>
+                <p>
+                    We first met here in Indonesia, brought together by different dreams but a shared goal—to support each other like a family. 
+                    <span class="highlight">Abuzar</span>, already a student here, became our mentor, teaching us essential survival tactics every night. 
+                    With his psychology background, he became our go-to person whenever we faced challenges.
+                </p>
+                <p>
+                    Our group consists of experts in various fields—<span class="highlight">Finance, IT, Design, Networking, and Mental Well-being.</span> 
+                    If anyone in our circle or beyond needs guidance in these areas, we're always ready to help. 
+                    Moreover, we provide <span class="highlight">free scholarship guidance</span> to those who aspire to study abroad.
+                </p>
+                <p><strong>We're more than just a group; we're a family.</strong></p>
+            </div>
+        </div>
+
+    </main>
+    <main>
+        <h2 style="color: lightblue;">Our Services</h2>
+        
+        <div class="services-container">
+            <div class="service" onclick="showService('cbt')">
+                <h3>Cognitive Behavioral Therapy (CBT)</h3>
+            </div>
+            <div class="service" onclick="showService('architectural')">
+                <h3>Architectural Drafting</h3>
+            </div>
+            <div class="service" onclick="showService('investment')">
+                <h3>Investment Advice</h3>
+            </div>
+            <div class="service" onclick="showService('graphics')">
+                <h3>Graphics & Web Development</h3>
+            </div>
+            <div class="service" onclick="showService('healthcare')">
+                <h3>HealthCare Consultant</h3>
+            </div>
+        </div>
+
+        <!-- Dynamic Content Section -->
+        <div id="service-details" class="service-details">
+            <div class="service-image">
+                <img id="service-image" src="default.jpg" alt="Service Image">
+            </div>
+            <div class="service-description">
+                <p id="service-description">Click on a service to see details.</p>
+            </div>
+        </div>
+
+    </main>
+    <main class="blog-container">
+        <h2 style="color: lightblue;">Latest Blog Posts</h2>
+
+        <div class="blog-card">
+            <h3>A Lonely Day - Yet Destined Together</h3>
+            <p>She was sitting by the window, watching the rain blur the city lights. Alone in a world that felt too ...</p>
+            <div class="blog-footer">
+                <a href="A Lonely Day - Yet Destined Together by Arsalan.pdf" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                <span>| by <strong>Muhammad Arsalan</strong></span>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <h3>The Power of Now: How Leadership Starts with Accountability</h3>
+            <p>Sitting in my first class at Universitas Muhammadiyah Surakarta, thousands of miles from home...</p>
+            <div class="blog-footer">
+                <a href="power-blog-by-zia1.pdf" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                <span>| by <strong>Zia Ul Rehman Zafar</strong></span>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <h3>Some facts about my School of Thought</h3>
+            <p>Explore practical tips to enhance your personal and professional life in an era of rapid technological advancement...</p>
+            <div class="blog-footer">
+                <a href="thought_blog-by-zia2.pdf" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                <span>| by <strong>Zia Ul Rehman Zafar</strong></span>
+            </div>
+        </div>
+
+    </main>
+    <main class="ask-container">
+        <h2>Have a Question? We’re Here to Help!</h2>
+        <p>Fill out the form below, and one of our members will get back to you soon.</p>
+
+        <form class="ask-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <select name="category">
+                <option value="" disabled selected>Select a Category</option>
+                <option value="Friendship">Friendship</option>
+                <option value="Career">Career</option>
+                <option value="Studies">Studies</option>
+                <option value="Personal Growth">Personal Growth</option>
+            </select>
+
+            <textarea name="question" placeholder="Type your question here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info-container">
+            <div class="contact-info-column contact-services">
+                <h3>Services</h3>
+                <ul>
+                    <li>Cognitive Behavioral Therapy (CBT)</li>
+                    <hr>
+                    <li>Architectural Drafting</li>
+                    <hr>
+                    <li>Investment Advice</li>
+                    <hr>
+                    <li>Graphics & Web development</li>
+                    <hr>
+                    <li>HealthCare Consultant</li>
+                </ul>
+            </div>
+            <div class="contact-info-column get-in-touch">
+                <h3>Get In Touch</h3>
+                <div class="get-in-touch-details">
+                    <p><i class="fa-solid fa-envelope"></i> indopaklegends05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +6282128519959</p>
+                </div>
+            <hr>    <div class="location">
+                    
+                    <div>
+                        <p><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Surakarta, Indonesia</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+        
+        <a href="https://wa.me/6282128519959" class="whatsapp-float" target="_blank">
+            <img src="whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+        </a>
+        
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                cursor: pointer;
+            }
+            
+            .whatsapp-float img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s;
+            }
+            
+            .whatsapp-float img:hover {
+                transform: scale(1.1);
+            }
+        </style>
+        <!-- Chatbot Container -->
+        <div class="chatbot-container">
+            <div class="chatbot-toggle" onclick="toggleChatbot()">Chat with Us</div>
+            <div class="chatbot" id="chatbot">
+                <div class="chat-header">Chat with Us</div>
+                <div class="chat-body" id="chat-body">
+                    <p class="bot-message">Hello! How can I help you?</p>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+
+     
+        
+
+
+
+    <footer>
+        <p>© 2025 IndoPak Solution. All rights reserved. Created by Zia Ul Rehman Zafar.</p>
+    </footer>
+    
+</body>
+</html>

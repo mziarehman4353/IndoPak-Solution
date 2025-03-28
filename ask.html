@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question | IndoPak Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0a66df3915.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Basic styling for the contact info section - adjust as needed */
+        .contact-info-container {
+            background-color: #f7f7f7; /* Light background */
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns for info */
+            gap: 20px;
+        }
+
+        .contact-info-column h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info-item i { /* For icons - you'll need to add a font library like Font Awesome */
+            margin-right: 10px;
+            color: #007bff; /* Example icon color */
+        }
+
+        .contact-services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-services li {
+            margin-bottom: 5px;
+        }
+
+        .get-in-touch-details p {
+            margin-bottom: 5px;
+        }
+
+        .location-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .location-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .location-list li::before {
+            content: "•"; /* Bullet point */
+            margin-right: 8px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar">
+        <h1>IndoPak Solution</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="ask.html" class="active">Ask a Question</a>
+        </nav>
+    </header>
+
+    <main class="ask-container">
+        <h2>Have a Question? We’re Here to Help!</h2>
+        <p>Fill out the form below, and one of our members will get back to you soon.</p>
+
+        <form class="ask-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <select name="category">
+                <option value="" disabled selected>Select a Category</option>
+                <option value="Friendship">Friendship</option>
+                <option value="Career">Career</option>
+                <option value="Studies">Studies</option>
+                <option value="Personal Growth">Personal Growth</option>
+            </select>
+
+            <textarea name="question" placeholder="Type your question here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info-container">
+            <div class="contact-info-column contact-services">
+                <h3>Services</h3>
+                <ul>
+                    <li>Cognitive Behavioral Therapy (CBT)</li>
+                    <hr>
+                    <li>Architectural Drafting</li>
+                    <hr>
+                    <li>Investment Advice</li>
+                    <hr>
+                    <li>Graphics & Web development</li>
+                    <hr>
+                    <li>HealthCare Consultant</li>
+                </ul>
+            </div>
+            <div class="contact-info-column get-in-touch">
+                <h3>Get In Touch</h3>
+                <div class="get-in-touch-details">
+                    <p><i class="fa-solid fa-envelope"></i> indopaklegends05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +6282128519959</p>
+                </div>
+            <hr>    <div class="location">
+                    
+                    <div>
+                        <p><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Surakarta, Indonesia</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        </main>
+        <a href="https://wa.me/6282128519959" class="whatsapp-float" target="_blank">
+            <img src="whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+        </a>
+        
+        <style>
+            .whatsapp-float {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000;
+                cursor: pointer;
+            }
+            
+            .whatsapp-float img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+                transition: transform 0.2s;
+            }
+            
+            .whatsapp-float img:hover {
+                transform: scale(1.1);
+            }
+        </style>
+                    <!-- Chatbot Container -->
+                </style>
+                <div class="chatbot-container">
+                    <div class="chatbot-toggle" onclick="toggleChatbot()">Chat with Us</div>
+                    <div class="chatbot" id="chatbot">
+                        <div class="chat-header">Chat with Us</div>
+                        <div class="chat-body" id="chat-body">
+                            <p class="bot-message">Hello! How can I help you?</p>
+                        </div>
+                        <div class="chat-footer">
+                            <input type="text" id="chat-input" placeholder="Type your message...">
+                            <button onclick="sendMessage()">Send</button>
+                        </div>
+                    </div>
+                </div>
+
+
+    <footer>
+        <p>© 2025 IndoPak Solution. All rights reserved. Created by Zia Ul Rehman Zafar.</p>
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | IndoPak Legends</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="navbar">
+        <h1>IndoPak Solution</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="ask.html">Ask a Question</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="blog-container">
+        <h2>Latest Blog Posts</h2>
+
+        <div class="blog-card">
+            <h3>A Lonely Day - Yet Destined Together</h3>
+            <p>She was sitting by the window, watching the rain blur the city lights. Alone in a world that felt too ...</p>
+            <div class="blog-footer">
+                <a href="A Lonely Day - Yet Destined Together by Arsalan.pdf" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                <span>| by <strong>Muhammad Arsalan</strong></span>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <h3>The Power of Now: How Leadership Starts with Accountability</h3>
+            <p>Sitting in my first class at Universitas Muhammadiyah Surakarta, thousands of miles from home...</p>
+            <div class="blog-footer">
+                <a href="power-blog-by-zia1.pdf" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                <span>| by <strong>Zia Ul Rehman Zafar</strong></span>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <h3>Some facts about my School of Thought</h3>
+            <p>Explore practical tips to enhance your personal and professional life in an era of rapid technological advancement...</p>
+            <div class="blog-footer">
+                <a href="thought_blog-by-zia2.pdf" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                <span>| by <strong>Zia Ul Rehman Zafar</strong></span>
+            </div>
+        </div>
+
+    </main>
+    <a href="https://wa.me/6282128519959" class="whatsapp-float" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+    </a>
+    
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+                <!-- Chatbot Container -->
+            </style>
+            <div class="chatbot-container">
+                <div class="chatbot-toggle" onclick="toggleChatbot()">Chat with Us</div>
+                <div class="chatbot" id="chatbot">
+                    <div class="chat-header">Chat with Us</div>
+                    <div class="chat-body" id="chat-body">
+                        <p class="bot-message">Hello! How can I help you?</p>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" id="chat-input" placeholder="Type your message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 IndoPak Solution. All rights reserved. Created by Zia Ul Rehman Zafar.</p>
+    </footer>
+
+</body>
+</html>

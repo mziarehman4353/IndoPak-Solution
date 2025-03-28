@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Abuzar Ghafari</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Meet the IndoPak Legends</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+
+            <a href="ask.html">Ask a Question</a>
+        </nav>
+    </header>
+
+    <main class="bio-container">
+        <div class="bio-image">
+            <img src="abuzar.png" alt="Abuzar Ghafari">
+        </div>
+        <div class="bio-text">
+            <h2>Abuzar Ghafari</h2>
+            <p><strong>Meet Abuzar Ghafari</strong>, the visionary behind IndoPak Legends.
+                With deep insight into human psychology, he offers wisdom on life, relationships, and success.
+                A natural motivator and deep thinker, he’s the glue that keeps the team united and thriving.
+                More than a leader, he’s building a legacy, ensuring IndoPak Legends stands the test of time, Abuzar ensures IndoPak Legends isn’t just a circle of friends but a <strong>legacy in the making</strong>.</p>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </main>
+    <a href="https://wa.me/6282128519959" class="whatsapp-float" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp" width="50" height="50">
+    </a>
+    
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+        
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+                <!-- Chatbot Container -->
+            </style>
+            <div class="chatbot-container">
+                <div class="chatbot-toggle" onclick="toggleChatbot()">Chat with Us</div>
+                <div class="chatbot" id="chatbot">
+                    <div class="chat-header">Chat with Us</div>
+                    <div class="chat-body" id="chat-body">
+                        <p class="bot-message">Hello! How can I help you?</p>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" id="chat-input" placeholder="Type your message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+
+    <footer>
+        <p>© 2025 IndoPak Solution. All rights reserved. Created by Zia Ul Rehman Zafar.</p>
+    </footer>
+</body>
+</html>
